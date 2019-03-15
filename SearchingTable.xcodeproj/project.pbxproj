@@ -12,6 +12,10 @@
 		9BFD5C34222DAB2500EA9935 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BFD5C32222DAB2500EA9935 /* Main.storyboard */; };
 		9BFD5C36222DAB2700EA9935 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BFD5C35222DAB2700EA9935 /* Assets.xcassets */; };
 		9BFD5C39222DAB2700EA9935 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BFD5C37222DAB2700EA9935 /* LaunchScreen.storyboard */; };
+		9BFD5C41222DB3A600EA9935 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFD5C40222DB3A600EA9935 /* CollectionViewController.swift */; };
+		9BFD5C43222DB3F900EA9935 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFD5C42222DB3F900EA9935 /* MyCollectionViewCell.swift */; };
+		9BFD5C45222DB43600EA9935 /* MyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFD5C44222DB43600EA9935 /* MyData.swift */; };
+		9BFD5C4A222DC09900EA9935 /* MyCollview + Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFD5C49222DC09900EA9935 /* MyCollview + Search.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		9BFD5C35222DAB2700EA9935 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BFD5C38222DAB2700EA9935 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BFD5C3A222DAB2700EA9935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BFD5C40222DB3A600EA9935 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		9BFD5C42222DB3F900EA9935 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		9BFD5C44222DB43600EA9935 /* MyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyData.swift; sourceTree = "<group>"; };
+		9BFD5C49222DC09900EA9935 /* MyCollview + Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyCollview + Search.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,42 @@
 		9BFD5C2D222DAB2500EA9935 /* SearchingTable */ = {
 			isa = PBXGroup;
 			children = (
+				9BFD5C48222DC07B00EA9935 /* Extension */,
+				9BFD5C47222DB4F500EA9935 /* Model */,
 				9BFD5C2E222DAB2500EA9935 /* AppDelegate.swift */,
-				9BFD5C30222DAB2500EA9935 /* ViewController.swift */,
+				9BFD5C46222DB4D700EA9935 /* View */,
 				9BFD5C32222DAB2500EA9935 /* Main.storyboard */,
 				9BFD5C35222DAB2700EA9935 /* Assets.xcassets */,
 				9BFD5C37222DAB2700EA9935 /* LaunchScreen.storyboard */,
 				9BFD5C3A222DAB2700EA9935 /* Info.plist */,
 			);
 			path = SearchingTable;
+			sourceTree = "<group>";
+		};
+		9BFD5C46222DB4D700EA9935 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9BFD5C42222DB3F900EA9935 /* MyCollectionViewCell.swift */,
+				9BFD5C40222DB3A600EA9935 /* CollectionViewController.swift */,
+				9BFD5C30222DAB2500EA9935 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9BFD5C47222DB4F500EA9935 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9BFD5C44222DB43600EA9935 /* MyData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9BFD5C48222DC07B00EA9935 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9BFD5C49222DC09900EA9935 /* MyCollview + Search.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BFD5C41222DB3A600EA9935 /* CollectionViewController.swift in Sources */,
 				9BFD5C31222DAB2500EA9935 /* ViewController.swift in Sources */,
+				9BFD5C4A222DC09900EA9935 /* MyCollview + Search.swift in Sources */,
+				9BFD5C43222DB3F900EA9935 /* MyCollectionViewCell.swift in Sources */,
+				9BFD5C45222DB43600EA9935 /* MyData.swift in Sources */,
 				9BFD5C2F222DAB2500EA9935 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
